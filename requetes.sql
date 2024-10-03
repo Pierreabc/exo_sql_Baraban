@@ -23,3 +23,7 @@ SELECT COUNT(client_id) AS client_id FROM clients;
 SELECT AVG(age) AS age_moyen FROM clients;
 
 SELECT SUM(budget) AS budget FROM campagnes;
+
+SELECT * FROM campagnes
+ORDER BY budget DESC
+LIMIT 1;
