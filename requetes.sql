@@ -27,3 +27,9 @@ SELECT SUM(budget) AS budget FROM campagnes;
 SELECT * FROM campagnes
 ORDER BY budget DESC
 LIMIT 1;
+
+
+SELECT COUNT(client_id) AS clients, nom_segment
+FROM Clients
+INNER JOIN Segments ON Clients.segment_id = Segments.segment_id
+GROUP BY nom_segment;
