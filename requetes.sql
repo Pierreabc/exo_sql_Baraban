@@ -16,3 +16,6 @@ ORDER BY budget ASC;
 SELECT * FROM campagnes
 ORDER BY debut_campagne DESC
 LIMIT 5;
+
+
+SELECT COUNT(client_id) AS client_id FROM clients;
