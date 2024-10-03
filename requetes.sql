@@ -19,3 +19,5 @@ LIMIT 5;
 
 
 SELECT COUNT(client_id) AS client_id FROM clients;
+
+SELECT AVG(age) AS age_moyen FROM clients;
